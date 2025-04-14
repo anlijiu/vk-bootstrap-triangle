@@ -11,7 +11,7 @@ target_link_libraries(${APP_NAME} PRIVATE glfw hmm vma vkb imgui tinyobjloader s
 if (${CMAKE_HOST_SYSTEM_PROCESSOR} STREQUAL "AMD64")
     set(DXC_EXE "$ENV{VULKAN_SDK}/Bin/dxc")
 else()
-    set(DXC_EXE "$ENV{VULKAN_SDK}/Bin32/dxc")
+    set(DXC_EXE "$ENV{VULKAN_SDK}/bin/dxc")
 endif()
 
 set(HLSL_SOURCE_FILES

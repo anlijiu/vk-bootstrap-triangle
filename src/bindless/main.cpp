@@ -850,7 +850,7 @@ int load_gltf_data(Init& init, RenderData& data, const std::string& gltf_file_pa
         return -1;
     }
 
-    assert(model.meshes.size() == 1, "DamagedHelmet only hase one model!");
+    // assert(model.meshes.size() == 1, "DamagedHelmet only hase one model!");
     const tinygltf::Mesh& mesh = model.meshes[0];
 
     // NOTE: TinyGltf loader has already loaded the binary buffer data and the images data.
@@ -973,7 +973,7 @@ int load_gltf_data(Init& init, RenderData& data, const std::string& gltf_file_pa
         int normalTexIdx = material.normalTexture.index;
         int emissiveTexIdx = material.emissiveTexture.index;
 
-        assert(metallicRoughnessTexIdx == occlusionTexIdx, "Conbine AO and metallicRoughness texture");
+        // assert(metallicRoughnessTexIdx == occlusionTexIdx, "Conbine AO and metallicRoughness texture");
 
         // A texture is defined by an image index, denoted by the source property and a sampler index (sampler).
         // Assmue that all textures are 8 bits per channel. They are all xxx / 255. They all have 4 components.

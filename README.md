@@ -1,3 +1,9 @@
+> 下载 [vulkan sdk  ->  SDK Tarball](https://vulkan.lunarg.com/sdk/home) <br>
+> 例如 [vulkansdk-linux-x86_64-1.4.309.0.tar.xz](https://sdk.lunarg.com/sdk/download/1.4.309.0/linux/vulkansdk-linux-x86_64-1.4.309.0.tar.xz) 解压缩到 `$HOME/VulkanSDK/1.4.309.0` <br>
+> `vim ~/.bashrc`  添加 `source $HOME/VulkanSDK/1.4.309.0/setup-env.sh`
+
+
+
 # vk-bootstrap-triangle
 
 ## 1. triangle with vk-bootstrap + push constants

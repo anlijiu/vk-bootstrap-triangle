@@ -787,7 +787,7 @@ int load_obj_data(Init& init, RenderData& data, const std::string& obj_file_path
                 float vy = attrib.vertices[3 * size_t(idx.vertex_index) + 1];
                 float vz = attrib.vertices[3 * size_t(idx.vertex_index) + 2];
 
-                assert(idx.normal_index >= 0, "The model doesn't have normal information but it is necessary.");
+                // assert(idx.normal_index >= 0, "The model doesn't have normal information but it is necessary.");
                 float nx = attrib.normals[3 * size_t(idx.normal_index) + 0];
                 float ny = attrib.normals[3 * size_t(idx.normal_index) + 1];
                 float nz = attrib.normals[3 * size_t(idx.normal_index) + 2];

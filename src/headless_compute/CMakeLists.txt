@@ -8,8 +8,8 @@ if (${CMAKE_HOST_SYSTEM_PROCESSOR} STREQUAL "AMD64")
     set(GLSL_VALIDATOR "$ENV{VULKAN_SDK}/Bin/glslangValidator")
     set(DXC_EXE "$ENV{VULKAN_SDK}/Bin/dxc")
 else()
-    set(GLSL_VALIDATOR "$ENV{VULKAN_SDK}/Bin32/glslangValidator")
-    set(DXC_EXE "$ENV{VULKAN_SDK}/Bin32/dxc")
+    set(GLSL_VALIDATOR "$ENV{VULKAN_SDK}/bin/glslangValidator")
+    set(DXC_EXE "$ENV{VULKAN_SDK}/bin/dxc")
 endif()
 
 set(HLSL_SOURCE_FILES

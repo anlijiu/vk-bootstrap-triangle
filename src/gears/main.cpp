@@ -27,7 +27,7 @@
 #endif
 
 const uint32_t NUM_GEARS = 3;
-const float M_PI = 3.14159265358979323846f;// pi
+// const float M_PI = 3.14159265358979323846f;// pi
 const uint32_t SCR_WIDTH = 256;
 const uint32_t SCR_HEIGHT = 256;
 

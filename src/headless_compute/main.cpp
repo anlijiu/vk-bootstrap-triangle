@@ -6,6 +6,7 @@
 #include <string>
 #include <array>
 #include <format>
+#include <dlfcn.h>
 
 #include <vulkan/vulkan.h>
 #include <HandmadeMath.h>
@@ -24,7 +25,7 @@
 #define RDC_DEBUGING 1
 #if RDC_DEBUGING
 #include <renderdoc_app.h>
-#include <windows.h>
+// #include <windows.h>
 RENDERDOC_API_1_1_2 *rdoc_api = NULL;
 #endif
 

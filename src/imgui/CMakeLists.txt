@@ -11,7 +11,7 @@ target_link_libraries(${APP_NAME} PRIVATE glfw hmm vma vkb imgui ${CMAKE_DL_LIBS
 if (${CMAKE_HOST_SYSTEM_PROCESSOR} STREQUAL "AMD64")
     set(GLSL_VALIDATOR "$ENV{VULKAN_SDK}/Bin/glslangValidator")
 else()
-    set(GLSL_VALIDATOR "$ENV{VULKAN_SDK}/Bin32/glslangValidator")
+    set(GLSL_VALIDATOR "$ENV{VULKAN_SDK}/bin/glslangValidator")
 endif()
 
 set(GLSL_SOURCE_FILES
